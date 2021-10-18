@@ -1,0 +1,225 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-display: auto;
+  font-weight: 400;
+  src: url(fonts/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-display: auto;
+  font-weight: 700;
+  src: url(fonts/Inter-Bold.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Inter";
+  font-size: 62.5%;
+  min-width: 37.5rem;
+}
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #20222f;
+  color: #fff;
+}
+/* style section general */
+.container {
+  width: 100%;
+  max-width: 144rem;
+  height: auto;
+  padding: 5rem 10rem;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+/* title page=> top right */
+.title h1 {
+  font-size: 2.8rem;
+  line-height: 3.4rem;
+  font-weight: 700;
+}
+.title p {
+  color: #a5a6a8;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  font-weight: 700;
+  margin-top: 5px;
+}
+/* dark mode */
+.dark-mode label {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #a5a6a8;
+}
+/* section social */
+.social {
+  height: 21.6rem;
+  display: grid;
+  grid-template: 1fr / repeat(4, 1fr);
+  grid-column-gap: 3rem;
+  margin: 5rem 0;
+}
+.box {
+  background-color: #252b42;
+  border-radius: 0.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.facebook {
+  border-top: 4px solid #178ff5;
+  border-radius: 0.5rem;
+}
+.twitter {
+  border-top: 4px solid #1da1f2;
+  border-radius: 0.5rem;
+}
+.instagram::before {
+  content: "";
+  background: linear-gradient(225deg, #df4896 0%, #ee877e 50.91%, #fdc366 100%);
+  height: 0.4rem;
+  width: 100%;
+  border-radius: 0.5rem 0.5rem 0 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.youtube {
+  border-top: 4px solid #c4032b;
+  border-radius: 0.5rem;
+}
+/* section social box child */
+.box header,
+.box footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+/* header */
+.box header h3 {
+  color: #8c98c6;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  margin-left: 1rem;
+}
+.box header img {
+  width: 2rem;
+  height: 2rem;
+}
+/* main */
+.box main .number-folower {
+  font-size: 5.6rem;
+  line-height: 4.8rem;
+  font-weight: 700;
+  letter-spacing: -0.2rem;
+}
+.box main .folowers {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  color: #8c98c6;
+  margin-top: 1rem;
+}
+/* footer */
+.box footer p {
+  color: #1eb589;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  margin-left: 0.5rem;
+}
+.box footer .red-text {
+  color: #dc414c;
+}
+/* overview */
+/* .overview {} */
+.header-overview h2 {
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  font-weight: 700;
+}
+.main-overview {
+  height: 28rem;
+  display: grid;
+  grid-template: 1fr 1fr / repeat(4, 1fr);
+  grid-gap: 3rem;
+  margin-top: 3rem;
+}
+.box-overview {
+  background-color: #252b42;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 3rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.box-overview header,
+.box-overview main,
+.box-overview main .tip {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.box-overview header h4 {
+  color: #8c98c6;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  font-weight: 700;
+}
+.box-overview main .number-overview {
+  color: #fff;
+  font-size: 3.2rem;
+  line-height: 3.9rem;
+  font-weight: 700;
+}
+.box-overview main .number-tip {
+  color: #1eb589;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+}
+.box-overview main .red-text {
+  color: #dc414c;
+}
+/* hover box and box overview */
+.box:hover,
+.box-overview:hover {
+  background: #333a55;
+}
+/* Feel free to remove these styles or customise in your own stylesheet 👍 */
+.attribution {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
