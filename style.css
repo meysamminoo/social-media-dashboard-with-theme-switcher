@@ -32,6 +32,7 @@ body {
   align-items: center;
   background-color: #20222f;
   color: #fff;
+  transition: all 0.3s ease-in-out;
 }
 /* style section general */
 .container {
@@ -52,7 +53,7 @@ body {
   line-height: 3.4rem;
   font-weight: 700;
 }
-.title p {
+.title-paraghp {
   color: #a5a6a8;
   font-size: 1.4rem;
   line-height: 1.7rem;
@@ -64,7 +65,7 @@ body {
   display: flex;
   align-items: center;
 }
-.dark-mode p {
+.dark-mode-text {
   font-size: 1.4rem;
   line-height: 1.7rem;
   color: #a5a6a8;
@@ -114,11 +115,9 @@ input:checked + .slider {
 input:checked + .slider:before {
   background: #f1f3fa;
 }
-
 input:focus + .slider {
   box-shadow: 0 0 0.1rem #2196f3;
 }
-
 input:checked + .slider:before {
   -webkit-transform: translateX(2.4rem);
   -ms-transform: translateX(2.4rem);
@@ -176,7 +175,7 @@ input:checked + .slider:before {
   align-items: center;
 }
 /* header */
-.box header h3 {
+.box-title {
   color: #8c98c6;
   font-size: 1.2rem;
   line-height: 1.5rem;
@@ -188,13 +187,13 @@ input:checked + .slider:before {
   height: 2rem;
 }
 /* main */
-.box main .number-folower {
+.number-folower {
   font-size: 5.6rem;
   line-height: 4.8rem;
   font-weight: 700;
   letter-spacing: -0.2rem;
 }
-.box main .folowers {
+.folowers {
   font-size: 1.2rem;
   line-height: 1.5rem;
   font-weight: 400;
@@ -246,13 +245,13 @@ input:checked + .slider:before {
   justify-content: space-between;
   align-items: center;
 }
-.box-overview header h4 {
+.box-overview-title {
   color: #8c98c6;
   font-size: 1.4rem;
   line-height: 1.7rem;
   font-weight: 700;
 }
-.box-overview main .number-overview {
+.number-overview {
   color: #fff;
   font-size: 3.2rem;
   line-height: 3.9rem;
@@ -330,4 +329,27 @@ input:checked + .slider:before {
   .main-overview {
     grid-template: repeat(8, 1fr) / 1fr;
   }
+  .attribution {
+    font-weight: 400;
+  }
+}
+
+.light {
+  background-color: #fff;
+  color: #1d1f29;
+}
+.light-text {
+  color: #63687d;
+}
+.light-text-mode {
+  color: #848bab;
+}
+.light-box {
+  background-color: #f1f3fa;
+}
+.light-box:hover {
+  background-color: #e1e4f0;
+}
+.light-text-dark {
+  color: #1d1f29;
 }
