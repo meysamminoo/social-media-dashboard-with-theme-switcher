@@ -333,7 +333,7 @@ input:checked + .slider:before {
     font-weight: 400;
   }
 }
-
+/* styles for light mode */
 .light {
   background-color: #fff;
   color: #1d1f29;
@@ -353,3 +353,4 @@ input:checked + .slider:before {
 .light-text-dark {
   color: #1d1f29;
 }
+/* styles for light mode */
